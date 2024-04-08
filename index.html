@@ -2,77 +2,197 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modern Burger Shop</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="practice.css">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .header-nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .header-nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .header-nav ul li:last-child {
+            margin-right: 0;
+        }
+
+        .header-nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Main section styles */
+        .main-section {
+            background-color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .main-section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .main-section p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .main-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .footer h4 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .headphone {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 80px;
+            z-index: 9999;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .headphone:hover {
+            transform: rotate(360deg);
+        }
+    </style>
 </head>
 
 <body>
 
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>WELCOME TO OUR WEBSITE</h1>
+            <nav class="header-nav">
+                <ul>
+                    <div class="abc">
+                    <li><a target="_blank" href="#home">Home</a></li>
+                    <li><a target="_blank" href="#Contact">Contact</a></li></div>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <header class="navbar">
-    <div class="container">
-      <h1>WELCOME TO OUR BURGER SHOP</h1>
-      <nav class="nav-container">
-        <ul class="nav">
-          <li><a href="#home">Menu</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <!-- Main section -->
+    <section id="home" class="main-section">
+        <div class="container">
+            <div>
+                <h2>The Future is Here!</h2>
+                <p>Mobile Phones are an integral part of one’s life, and often define one’s style quotient. With
+                    smartphones nowadays becoming an important part of our lives, we want our phones to be stylish as
+                    well as give it some edge using accessories to enable efficient use of our mobile phones. Mobile
+                    Phone Accessories are the new need of the hour if you already own a Mobile Phone.Mobile accessories
+                    need to be of high quality, durable, long-lasting, and functional. In addition to this, customers
+                    look for variety in color and style. For example, phone cases have become not just protection for
+                    mobile devices, but a fashion piece too.</p>
+            </div>
+            <img src="https://media.licdn.com/dms/image/D5612AQFTuOF6COoV6g/article-cover_image-shrink_720_1280/0/1698401616161?e=1715817600&v=beta&t=K3ezYi3hQRHSDfbCmdBG0rDV5g9DsHuSbv9ybaP1oLw"
+                alt="Mobile Phone" class="phone-image">
+        </div>
+    </section>
 
+    <!-- Footer section -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div>
+                <h4>Check us out</h4>
+                <ul>
+                    <li><a target="_blank" href="#">Instagram</a></li>
+                    <li><a target="_blank" href="#">Facebook</a></li>
+                    <li><a target="_blank" href="#">Linkedin</a></li>
+                    <li><a target="_blank" href="#">WhatsApp</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact Info</h4>
+                <ul>
+                    <li>karachi, Pakistan</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
-  <section id="home" class="header">
-    <div class="container">
-      <div>
-        <h2>Discover the Tastiest Burgers</h2>
-        <p>Indulge in the unparalleled taste experience at our burger shop, where every bite tells a story of quality
-          craftsmanship and flavor innovation. Our burgers boast the freshest, locally sourced ingredients, meticulously
-          selected and expertly combined to deliver an explosion of taste sensations.</p>
-        <a href="#" class="cta-btn">Explore Menu</a>
-      </div>
-      <img src="burger.jpg" alt="">
-    </div>
-  </section>
-
-
-  <section id="about" class="about-section">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>We are passionate about delivering the best burgers to our customers. Our commitment to quality ingredients and
-        exceptional taste sets us apart. Learn more about our story and why we love what we do.</p>
-      <a href="#" class="cta-btn">Read More</a>
-    </div>
-  </section>
-
-  <footer id="contact" class="footer">
-    <div class="container">
-      <div class="footer-info">
-        <h2>Contact Us</h2>
-        <form action="#" class="contact-form">
-          <input type="text" placeholder="Your Name">
-          <input type="email" placeholder="Your Email">
-          <textarea placeholder="Your Message"></textarea>
-          <button type="submit" class="btn">Send Message</button>
-        </form>
-      </div>
-      <div class="footer-links">
-        <h2>Connect with Us</h2>
-        <ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-
-
-  <img src="burger.jpg" alt="" class="burger">
-  <img src="burger.jpg" alt="" class="burger2">
+    <!-- Headphone overlay -->
+    <img src="https://png.pngtree.com/png-vector/20190504/ourlarge/pngtree-headphone-icon-design-template-vector-png-image_1020052.jpg"
+        alt="Headphone" class="headphone">
 
 </body>
 
